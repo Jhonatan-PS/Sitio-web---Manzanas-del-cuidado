@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./Imagenes/Logo de Manzanas del cuidado.png" type="image/png">
+    <script src="Funcionamiento.js"></script>
+    <script src="JQuery.js"></script>
+    <link rel="stylesheet" href="Estilo.css">
+    <title>Inicio</title>
+</head>
+<body>
+    <header>
+        <a href="Login.html" class="login-link">
+            <img src="./Imagenes/Muñeco de login.png" alt="Muñeco de login" class="login-icon">
+        </a>
+        <a href="Registro.html" class="register-link">
+            <img src="./Imagenes/Muñeco de registro.png" alt="Muñeco de registro" class="register-icon">
+        </a>
+        <img src="./Imagenes/Logo de Manzanas del cuidado.png" alt="Logo de Manzanas del ciudado" id="Logo_Manzanas_del_cuidado">
+    </header>
+    <nav>
+        <img src="./Imagenes/Manzanas del cuidado frase .png" alt="Frase manzanas del ciudado">
+    </nav>
+    <div class="Info_Padre">
+        <div class="Info_Hijo1">
+            <p>Las Manzanas del Cuidado son espacios de la ciudad en los que brindamos tiempo y servicios a las mujeres y a sus familias.</p>
+            <h3><b>¡Aquí ellas pueden cumplir sus sueños, mientras cuidamos a quienes cuidan!</b></h3>
+            <p>En las Manzanas del Cuidado las cuidadoras tienen tiempo y servicios gratuitos para que puedan cumplir los sueños que pusieron en pausa por la sobrecarga en los trabajos de cuidado.</p>
+            <img src="./Imagenes/Mujeres haciendo yoga.png" alt="Mujeres haciendo yoga" class="Mujeres">
+        </div>
+        <div class="Info_Hijo2">
+            <p>Aquí pueden estudiar, emprender, emplearse, descansar, ejercitarse, recibir orientación y asesoría jurídica y psicológica, lavar su ropa y la de su familia en lavanderías comunitarias, todo totalmente gratis, <b>y mientras ellas están en estos servicios, las personas a quienes cuidan son atendidas</b> en espacios en los que desarrollamos sus capacidades y promovemos su autonomía.</p>
+            <p>Así relevamos a las mujeres de la sobrecarga del cuidado, les damos tiempo y servicios para que cumplan sus sueños, <b>mientras cuidamos a quienes lo requieren.</b></p>
+            <img src="./Imagenes/Mamas nadando.png" alt="Mamas nadando" class="Mujeres">
+        </div>
+        <div class="Info_Hijo3">
+            <p>Las Manzanas son áreas de la ciudad en las que concentramos infraestructura y servicios para atender de manera próxima y simultánea a las cuidadoras y a sus familias. Por ejemplo, en una Manzana del Cuidado las cuidadoras y quienes ellas cuidan pueden encontrar colegios, jardines, parques, hospitales, centros de atención para personas mayores y personas con discapacidad, todo a menos de 30 minutos caminando, así, logramos que no tengan que invertir tiempo y dinero en desplazamientos, y que puedan disfrutar todos los servicios que necesitan para mejorar su calidad de vida.</p>            
+            <img src="./Imagenes/Mujeres graduadas.png" alt="Mujeres graduadas" class="Mujeres">
+        </div>        
+    </div>
+    <div id="Encuentra_tu_manzana">
+        <h2><b>¡Encuentra aquí la Manzana del Cuidado más cercana y empieza ya a disfrutar sus servicios GRATIS!</b></h2>
+        <button id="Boton_Ir_ahora">Ir ahora</button>
+    </div>
+</body>
+<script>
+    $(document).ready(function() {
+        $(window).scroll(function() {
+            $(".Info_Hijo1, .Info_Hijo2, .Info_Hijo3").each(function() {
+                var elemTop = $(this).offset().top;
+                var elemBottom = elemTop + $(this).height();
+                var viewportTop = $(window).scrollTop();
+                var viewportBottom = viewportTop + $(window).height();
+                    
+                if (elemBottom > viewportTop && elemTop < viewportBottom) {
+                    $(this).animate({ opacity: 1, left: 0 }, 1500);
+                }
+            });
+        });
+    });
+</script>
+
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./Imagenes/Logo de Manzanas del cuidado.png" type="image/png">    
+    <link rel="stylesheet" href="Estilo2.css">
+    <style>
+        .cs-link {
+            position: absolute;
+            top: 50px;
+            right: 11px; 
+        }
+
+        .cs-icon {
+            width: 55px;
+            height: 55px;
+            cursor: pointer;
+            transition: 0.3s ease-in-out, transform 0.2s ease-in-out;
+        }
+
+        .cs-icon:hover {
+            transform: scale(1.3);
+        }
+    </style>
+    <title>Propon tu manzana del cuidado</title>
+</head>
+<body>
+    <header>    
+        <a href="User.php" class="user-link">
+            <img src="./Imagenes/Muñeco de login.png" alt="Muñeco de usuario" class="user-icon">
+        </a>    
+        <a href="CerrarSesion.php" class="cs-link">
+            <img src="./Imagenes/Logo de cerrar sesion.png" alt="Logo de cerrar sesion" class="cs-icon">
+        </a>
+        <a href="Bienvenida.html">
+            <img src="./Imagenes/Logo de Manzanas del cuidado.png" alt="Logo de Manzanas del ciudado" id="Logo_Manzanas_del_cuidado">
+        </a>
+    </header>
+    <nav>
+        <img src="./Imagenes/Manzanas del cuidado frase .png" alt="Frase manzanas del cuidado">
+    </nav>    
+        <ul id="menu_funciones">
+            <li class="menu-item">Registro
+              <ul class="submenu">
+                <li id="li_submenu-1"><a href="Registro municipios.html">Registro municipios</a></li>
+                <li id="li_submenu-2"><a href="Registro manzanas.html">Registro manzanas</a></li>
+                <li id="li_submenu-3"><a href="Registro establecimientos.html">Registro establecimientos</a></li>
+                <li id="li_submenu-4"><a href="Registro servicios.html">Registro servicios</a></li>
+              </ul>
+            </li>
+            <li class="menu-item"><a href="Propon tu manzana.html">Propon tu manzana del cuidado mujer cuidadora</a></li>
+            <li class="menu-item"><a href="Asignacion manzana del cuidado.html">Asignación manzana del cuidado</a></li>
+        </ul>
+    <div id="Info_registro">
+        <form action="Propon_manzana.php" method="post" class="centered-container">
+            <p>Nombre de la manzana:</p>
+            <input type="text" name="nombredelamanzana">
+            <br>
+            <p>Servicio:</p>
+            <input type="text" name="servicio">
+            <br>
+            <p>Día</p>
+            <input type="date" name="dia">
+            <br>
+            <p>Hora</p>
+            <input type="time" name="hora">           
+            <button class="Boton_guardar" type="submit" name="boton_guardar_propuesta">Proponer</button>
+        </form>
+    </div>
+    <div id="Encuentra_tu_manzana">
+        <h2><b>¡Encuentra aquí la Manzana del Cuidado más cercana y empieza ya a disfrutar sus servicios GRATIS!</b></h2>
+        <button id="Boton_Ve_ahora">Ve ahora</button>
+    </div>
+</body>
+<script src="Funcionamiento.js"></script>
+</html>

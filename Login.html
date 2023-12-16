@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./Imagenes/Logo de Manzanas del cuidado.png" type="image/png">
+    <script src="Funcionamiento.js"></script>
+    <link rel="stylesheet" href="Estilo.css">
+    <title>Login</title>
+</head>
+
+<body>
+    <header>
+        <a href="Inicio.html">
+            <img src="./Imagenes/Logo de Manzanas del cuidado.png" alt="Logo de Manzanas del ciudado" id="Logo_Manzanas_del_cuidado">
+        </a>
+    </header>
+    <nav>
+        <img src="./Imagenes/Inicio de sesión frase.png" alt="Inicio de sesión">
+    </nav>
+    <div class="Info_Padre">
+        <div id="Div_Inicio_sesión">
+            <form action="Login_validacion.php" method="post">
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="contrasena">Contraseña:</label>
+                <input type="password" id="contrasena_inicio" name="contraseña" required>
+                <span class="span"><a href="#">¿Olvidaste tu contraseña?</a></span>
+                <button type="submit" name="boton_iniciar_sesion" id="Boton_Iniciar_sesion">Iniciar sesión</button>
+                <span class="span">¿No tienes una cuenta aun? <a href="Registro.html">Crear cuenta</a></span>
+            </form>
+        </div>
+    </div>
+</body>
+<script>
+
+</script>
+
+</html>

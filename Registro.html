@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./Imagenes/Logo de Manzanas del cuidado.png" type="image/png">
+    <script src="Funcionamiento.js"></script>
+    <link rel="stylesheet" href="Estilo.css">
+    <title>Registro</title>
+</head>
+
+<body>
+    <header>
+        <a href="Inicio.html">
+            <img src="./Imagenes/Logo de Manzanas del cuidado.png" alt="Logo de Manzanas del ciudado" id="Logo_Manzanas_del_cuidado">
+        </a>
+    </header>
+    <nav>
+        <img src="./Imagenes/Registro frase.png" alt="Registro">
+    </nav>
+    <div class="Info_Padre">
+        <div id="Div_Registro">
+            <h2>Crea una cuenta</h2>
+            <p>Es rápido y fácil.</p>
+            <hr>
+            <form action="Registro.php" method="post">
+                <label for="tipoDocumento">Tipo de Documento:</label>
+                <select id="tipoDocumento" name="tipoDocumento">
+                    <option value="Tarjeta de identidad">Tarjeta de identidad</option>
+                    <option value="Cédula de ciudadanía">Cédula de ciudadanía</option>
+                    <option value="Cédula de extranjería">Cédula de extranjería</option>
+                    <option value="Pasaporte">Pasaporte</option>
+                </select><br>
+        
+                <label for="documento">Documento:</label>
+                <input type="number" id="documento" name="documento" required><br>
+        
+                <label for="nombres">Nombres:</label>
+                <input type="text" id="nombres" name="nombres" required><br>
+        
+                <label for="apellidos">Apellidos:</label>
+                <input type="text" id="apellidos" name="apellidos" required><br>
+
+                <label for="contrasena">Contraseña:</label>
+                <input type="password" id="contrasena_registro" name="contraseña" required>
+        
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" required><br>
+        
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email_registro" name="email" required><br>
+        
+                <label for="ciudad">Ciudad:</label>
+                <select id="ciudad" name="ciudad">
+                    <option value="Bogota">Bogota</option>
+                    <option value="Cali">Cali</option>
+                    <option value="Medellín">Medellín</option>
+                    <option value="Tunja">Tunja</option>
+                    <option value="Cartagena">Cartagena</option>
+                    <option value="Santa Marta">Santa Marta</option>
+                    <option value="Bucaramanga">Bucaramanga</option>
+                    <option value="Neiva">Neiva</option>
+                    <option value="Cúcuta">Cúcuta</option>
+                    <option value="Ibague">Ibague</option>
+                    <option value="Armenia">Armenia</option>
+                    <option value="Manizales">Manizales</option>
+                    <option value="Villavicencio">Villavicencio</option>
+                </select><br>
+        
+                <label for="direccion">Dirección:</label>
+                <input type="text" id="direccion" name="direccion" required><br>
+        
+                <label for="ocupacion">Ocupación:</label>
+                <input type="text" id="ocupacion" name="ocupacion" required><br>
+        
+                <label for="servicios">Servicios en los que le gustaría participar:</label>
+                <input type="text" id="servicios" name="servicios" required><br>
+        
+                <button type="submit" name="boton_registrarse" id="Boton_registrarse">Registrarse</button>
+            </form>
+        </div>
+    </div>
+</body>
+<script>
+
+</script>
+
+</html>

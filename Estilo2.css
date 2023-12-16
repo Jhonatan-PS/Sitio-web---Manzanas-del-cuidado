@@ -1,0 +1,364 @@
+@import url('https://fonts.googleapis.com/css2?family=Farro&display=swap');
+
+body {
+    background-color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.user-link {
+    position: absolute;
+    top: 10px;
+    right: 13px; 
+}
+
+.user-icon {
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.user-icon:hover {
+    transform: scale(1.3);
+}
+
+header {
+    background-color: purple;
+    width: auto;
+    text-align: center;
+    position: relative;
+}
+
+#Logo_Manzanas_del_cuidado {
+    width: 225px;
+    height: 195px;
+    border-radius: 100%;
+    cursor: pointer;
+    margin: 0 auto;
+}
+
+nav {
+    background-color: #f5f5f5;
+    width: auto;
+    height: auto;
+    text-align: center;
+}
+
+nav img {
+    width: 500px;
+    height: 150px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.Info_Padre {
+    background-color: #f5f5f5;
+    overflow: hidden;
+    position: relative;
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#Encuentra_tu_manzana {
+    background-color: #f5f5f5;
+    overflow: hidden;
+    position: relative;
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-family: 'Farro', sans-serif;
+    font-size: 13px;
+}
+
+#Boton_Ve_ahora {
+    font-weight: bold;
+    font-family: 'Farro', sans-serif;
+    font-size: 13px;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: purple;
+    color: white;
+    border: 10px 10px 10px 10px black;
+    border-radius: 10px;
+    box-shadow: 1px 1px 30px 7px purple;
+    cursor: pointer;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+#Boton_Ve_ahora:hover {
+    transform: scale(1.1);
+}
+
+#menu_funciones {
+    font-weight: bold;
+    margin-top: 0;
+    padding: 0;
+    list-style: none;
+    font-family: 'Farro', sans-serif;
+    background-color: purple;
+    color: white;    
+    display: flex;
+    justify-content: start;
+}
+  
+.menu-item {    
+    background-color: purple;
+    cursor: pointer;
+    padding: 23px;
+    transition: background-color 0.3s;
+    margin: 0;     
+}
+  
+.menu-item:hover {
+    background-color: #4B0082;
+}
+  
+.submenu {
+    text-align: center;
+    border-radius: 3px;
+    display: none;
+    position: absolute;
+    background-color: #4B0082;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+  
+.menu-item:hover .submenu {
+    display: block;
+}
+  
+.submenu li {
+    cursor: pointer;
+    padding: 10px;   
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+#li_submenu-1:hover{
+    background-color: slateblue;
+    border-radius: 3px;
+}
+
+#li_submenu-2:hover{
+    background-color: slateblue;    
+}
+
+#li_submenu-3:hover{
+    background-color: slateblue;
+}
+
+#li_submenu-4:hover{
+    background-color: slateblue;
+    border-radius: 3px;
+}
+
+marquee {
+    font-family: 'Farro', sans-serif;
+    font-size: 20px;
+    color: black;
+    background-color: white;
+    padding: 10px;
+}
+
+#Info_bienvenida {
+    background-color: #f5f5f5;
+    font-family: 'Farro', sans-serif;
+    font-size: 17px;    
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#Info_bienvenida img {
+    max-width: 100%;
+    border-radius: 5px;
+} 
+
+#Info_registro {
+    background-color: #f5f5f5;
+    font-family: 'Farro', sans-serif;
+    font-size: 17px;    
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.centered-container {
+    color: white;
+    border-radius: 10px;
+    background-color: #4B0082;
+    font-family: 'Farro', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 50px;
+    margin: 10px;  
+    text-align: center;
+}
+
+.centered-container input, textarea {
+    font-family: 'Farro', sans-serif;
+    width: 30%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 3px solid black;
+    border-radius: 10px;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.Info_User {
+    color: white;
+    border-radius: 10px;
+    background-color: #4B0082;
+    font-family: 'Farro', sans-serif;   
+    padding: 15px;
+    margin: 10px;      
+}
+
+.Info_User_restaurar_contraseña {
+    color: white;
+    border-radius: 10px;
+    background-color: #4B0082;
+    font-family: 'Farro', sans-serif;
+    font-size: 15px;    
+    padding: 15px;
+    margin: 10px;  
+    text-align: center;
+}
+
+
+#municipalitySelect {
+    font-family: 'Farro', sans-serif;
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+    border: 4px solid black;
+}
+
+#manzanasSelect {
+    font-family: 'Farro', sans-serif;
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+    border: 4px solid black;
+}
+
+.Boton_guardar {
+    font-family: 'Farro', sans-serif;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    margin: 0 auto;
+    padding: 15px 25px;
+    margin-top: 50px;
+    border: 3px solid black;
+    border-radius: 10px;
+    background-color: purple;
+    cursor: pointer;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.Boton_guardar:hover {    
+    transform: scale(1.1);
+}
+
+.Boton_guardar_contraseña_nueva {
+    font-family: 'Farro', sans-serif;
+    color: white;
+    font-weight: bold;
+    display: block;
+    margin-left: 56px;
+    padding: 5px 10px;
+    margin: 0 auto;
+    border: 3px solid black;
+    border-radius: 10px;
+    background-color: purple;   
+    cursor: pointer;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.Boton_guardar_contraseña_nueva:hover {
+    transform: scale(1.1);
+}
+
+.Input_cambio_contraseña {
+    font-family: 'Farro', sans-serif;
+    border: 3px solid black; 
+    padding: 5px 10px;
+    border-radius: 5px;   
+}
+
+.Info_localidad {
+    color: white;
+    border-radius: 10px;
+    background-color: #4B0082;
+    font-family: 'Farro', sans-serif;
+    font-size: 20px;    
+    padding: 30px;
+    margin: 150px;  
+    text-align: center;
+}
+
+.Contenedor_servicios {
+    background-color:white;
+    border-radius: 10px;
+    padding: 50px;
+    margin: 10px;
+}
+
+.Servicio_1 {
+    text-align: start;
+    font-size: 13px;
+    background-color: #6c3091;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.Informacion_Servicio_1 {
+    display: none;
+    padding: 5px;
+    margin: 5px;
+}
+
+.Servicio_2 {
+    text-align: start;
+    font-size: 13px;
+    background-color: goldenrod;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.Informacion_Servicio_2 {
+    display: none;
+    padding: 5px;
+    margin: 5px;
+}
+
+.Servicio_3 {
+    text-align: start;
+    font-size: 13px;
+    background-color: lightseagreen;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.Informacion_Servicio_3 {
+    display: none;
+    padding: 5px;
+    margin: 5px;
+}
+
+
+  
